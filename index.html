@@ -9,12 +9,42 @@
     <title>Mario Jump</title>
 </head>
 <body>
-    <div class="game-board">
-
-        <img src="./imagens/mario.gif" class="mario">
-        <img src="./imagens/pipe.png" class="cano">
-        <img src="./imagens/clouds.png" class="nuvens">
-
+    <div>
+        <div class="game-board">
+            <img src="./imagens/mario.gif" class="mario">
+            <img src="./imagens/pipe.png" class="cano">
+            <img src="./imagens/clouds.png" class="nuvens">
+            <div class="btn">
+                <button id="reloadButton">Restart Game</button>
+            </div>
+        </div>
+        
+        <div class="containerBtns">
+            <div>
+                <select id="level">
+                    <option value="" selected disabled>Difículdade</option>
+                    <option value="1">&lt;=</option>
+                    <option value="2">&lt;=&gt;</option>
+                    <option value="3">=&gt;</option>
+                </select>
+            </div>
+            <div>
+                <select id="velocidade">
+                    <option value="" selected disabled>Velocidade</option>
+                    <option value="1">5s</option>
+                    <option value="2">4s</option>
+                    <option value="3">Padrão 3s</option>
+                    <option value="4">2s</option>
+                    <option value="5">1s</option>
+                </select>
+            </div>
+            <div class="btnPause">
+                <button id="pause">Pause Game</button>
+            </div>
+            <div class="btnResume">
+                <button id="resume">Resume Game</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
